@@ -1,0 +1,23 @@
+{
+  "name": "ecommercedb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bomingfan/eCommerceDB.git"
+  },
+  "author": "bomingfan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bomingfan/eCommerceDB/issues"
+  },
+  "homepage": "https://github.com/bomingfan/eCommerceDB#readme",
+  "dependencies": {
+    "inquirer": "^4.0.2",
+    "mysql": "^2.15.0"
+  }
+}
