@@ -20,6 +20,7 @@ connection.connect(function (err) {
     if (err) throw err;
     // run the start function after the connection is made to prompt the user
     // console.log("connected as id " + connection.threadId);
+    queryAll();
     userBuy();
     connection.end();
 });
@@ -32,23 +33,31 @@ function userBuy() {
         if (err) throw err;
     inquirer.prompt([
         {
-            name: "buy",
             type: "input",
-            message: "What would you like to buy? Please type an ID number."
+            name: "buy",
+            message: "What would you like to buy? Please type an ID number.",
+            validate: function(value) {
+                if (isNaN(value) === false) {
+                  return true;
+                }
+                console.log("\nInvalid Entry!");
+                return false;
+              }
         },
         {
             name: "quantity",
             type: "input",
             message: "How many do you want?",
             validate: function(value) {
-                if (value > res[3].stock_quantity) {
+                if (isNaN(value) === false) {
                   return true;
                 }
-                // return false;
-                console.log("\nInsufficient quantity! ");
+                console.log("\nInvalid Entry!");
+                return false;
               }
         }
     ]).then(function(ans){
+        
         console.log(res[ans.buy].stock_quantity);
     });
 });
