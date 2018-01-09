@@ -45,7 +45,7 @@ Gives manager four choices.
 `Add to Inventory` will direct manager to add inventory to an existing product.
 `Add New Product` will direct manager to add a new product to the database. 
 
-
+![alt text](https://github.com/bomingfan/eCommerceDB/blob/master/images/manager-34.gif)
 
 
 
