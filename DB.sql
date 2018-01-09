@@ -27,3 +27,12 @@ VALUES  ("iTunes Gift Card", "Apple", 10, 10.99, 10),
         ("LOL Game Card", "Riot", 25, 26.99, 100),
         ("XBOX Gift Card", "Microsoft", 15, 14.99, 110), 
         ("XBOX Gift Card", "Microsoft", 50, 49.99, 120);
+
+
+CREATE TABLE departments (
+  dept_id INT NOT NULL AUTO_INCREMENT,
+  dept_name VARCHAR(30),
+  over_head_costs DECIMAL(10,2),
+  PRIMARY KEY (id)
+);
+

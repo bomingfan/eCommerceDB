@@ -19,10 +19,8 @@ var connection = mysql.createConnection({
 connection.connect(function (err) {
     if (err) throw err;
     // run the start function after the connection is made to prompt the user
-    // console.log("connected as id " + connection.threadId);
     queryAll();
     start();
-    // connection.end();
 });
 
 
@@ -63,9 +61,7 @@ function start() {
         } else {
             console.log("Insufficient quantity! We only have " + res[ans.buy-1].stock_quantity + " left.");
             buyAgain();
-        }
-
-        
+        }        
     });
 });
 }
