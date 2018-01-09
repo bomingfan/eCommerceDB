@@ -21,7 +21,7 @@ The products' list will show and customer will be prompt to purchase an item by 
 
 ### Validation:
 
-When putting in ID, a invalid charater or a number out of the range of ID will return invalid. When the buying volume is more than the stock quantity, it will return insufficient stock and prompt user to buy again.
+When putting in ID, an invalid character or a number out of the range of ID will return invalid. When the buying volume is more than the stock quantity, it will return insufficient stock and prompt user to buy again.
 
 ![alt text](https://github.com/bomingfan/eCommerceDB/blob/master/images/customer-validation.gif)
 
@@ -30,5 +30,7 @@ When putting in ID, a invalid charater or a number out of the range of ID will r
 ```
 node bamazonManager.js
 ``` 
-Gives manager four choices. 
+Gives manager four choices.
+
+
 
