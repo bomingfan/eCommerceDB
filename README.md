@@ -37,8 +37,13 @@ Gives manager four choices.
 * `Add to Inventory`
 * `Add New Product`
 
-`View Products for Sale` will show the current stock
+`View Products for Sale` will show the current stock.
 `View Low Inventory` will show the stock item with a quantity of less than 5.
+
+![alt text](https://github.com/bomingfan/eCommerceDB/blob/master/images/manager-12.gif)
+
+`Add to Inventory` will direct manager to add inventory to an existing product.
+`Add New Product` will direct manager to add a new product to the database. 
 
 
 
