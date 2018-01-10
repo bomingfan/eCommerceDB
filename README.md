@@ -1,6 +1,9 @@
 # eCommerceDB
 
-Before running the app please install npm packages by running `npm install` in the command line.
+Before running the app: 
+1. install npm packages by running `npm install` in the command line.
+1. add your mysql database password in the file `DBConfig.js`.
+1. run DB.sql in mysql to create the Datebase.
 
 If `package.json` is not fetched, run the following command:
 

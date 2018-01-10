@@ -1,19 +1,8 @@
-// require npm
-var mysql = require('mysql');
+// require npm and DBConfig
+
 var inquirer = require('inquirer');
+var connection = require('./DBConfig.js');
 
-// connect database
-var connection = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-
-    // Your username
-    user: "root",
-
-    // Your password
-    password: "",
-    database: "bamazon"
-});
 
 // connect sql server run functions and then end connection
 connection.connect(function (err) {

@@ -33,6 +33,6 @@ CREATE TABLE departments (
   dept_id INT NOT NULL AUTO_INCREMENT,
   dept_name VARCHAR(30),
   over_head_costs DECIMAL(10,2),
-  PRIMARY KEY (id)
+  PRIMARY KEY (dept_id)
 );
 
